@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/allanime"
+            android:icon="@drawable/choice"
+            android:title="All Anime" />
+        <item
+            android:id="@+id/marked"
+            android:icon="@drawable/choice"
+            android:title="Marked" />
+    </group>
+</menu>
