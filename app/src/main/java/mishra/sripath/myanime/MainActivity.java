@@ -36,7 +36,15 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         File root = new File(Environment.getExternalStorageDirectory(), "/Android/data/com.MyAnime/marked.txt");
         if(root==null)
+            {
             root.mkdir();
+           try {
+               root.createNewFile();
+           }catch (Exception e)
+           {
+               e.printStackTrace();
+           }
+        }
     }
 
     @Override
